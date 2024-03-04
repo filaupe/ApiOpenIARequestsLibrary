@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+ApiOpenIARequests/Properties/ApiKeys.resx
+ApiOpenIARequests/Properties/apiKeys.Designer.cs
+ApiOpenIARequests/App.config
