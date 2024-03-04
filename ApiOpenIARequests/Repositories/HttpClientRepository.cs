@@ -41,7 +41,7 @@ public class HttpClientRepository
             _client?.DefaultRequestHeaders.Add(header.Key, header.Value);
     }
 
-    public async Task<string> GetContentLengthAsync(string url, StringContent request)
+    public async Task<string> RequestPostAsync(string url, StringContent request)
     {
         this.InitialVerification(url);
         using var response = await _client!.PostAsync(url, request);        

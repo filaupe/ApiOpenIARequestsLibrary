@@ -59,7 +59,7 @@ try
     });
 
     var inicial = DateTime.Now;
-    var response = await clientRepository.GetContentLengthAsync(apiEndpoint, httpContent);
+    string? response = await clientRepository.RequestPostAsync(apiEndpoint, httpContent);
     string text = response.ToOpenAIResponse()?.ToString() ?? String.Empty;
     Console.WriteLine(text);
     Console.WriteLine(DateTime.Now.Subtract(inicial).Seconds);
